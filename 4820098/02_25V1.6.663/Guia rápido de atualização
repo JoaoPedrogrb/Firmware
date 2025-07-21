@@ -1,0 +1,8 @@
+Verifique se a conexão com a internet está estável
+Envie o comando DataTransfer com os seguintes campos: {"data":"011c020001","messageId":"templateInfo","vendorId":"Intelbras"}
+A estação enviará um retorno {"status":"Accepted","data":"XXXXXX"} e irá reiniciar na sequência
+Envie o arquivo .hex via FirmwareUpdate para a estação de recarga com o link a seguir: https://gitlab.com/JoaoPedrogrb/firmware/-/blob/main/4820099/02_25V1.6.663/AC7000-AE-34-ITB_V1.6.663.enfs
+Aguarde ela enviar via FirmwareStatusNotification a resposta Installed
+Envie o arquivo .bin via FirmwareUpdate para a estação de recarga com o link a seguir: https://gitlab.com/JoaoPedrogrb/firmware/-/blob/main/4820099/02_25V1.6.663/EESP32WIIICustom0_Intelbras_V43.0.062.bin
+Aguarde ela enviar via FirmwareStatusNotification a resposta Installed
+Dependendo da versão do firmware, será necessário reconfigurar a estação localmente devido a modificações no modo access point (página de configuração)
